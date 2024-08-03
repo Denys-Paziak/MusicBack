@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use('/', blogRoutes);
 app.use('/', portfolioRoutes);
-// app.use('/', promocodeRoutes);
+app.use('/', promocodeRoutes);
 
 app.get('/', (req, res) => {
     res.send({ message: 'Hello WWW!' });
